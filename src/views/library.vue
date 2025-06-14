@@ -215,7 +215,7 @@
 
 <script>
 import { mapActions, mapMutations, mapState } from 'vuex';
-import { randomNum, dailyTask } from '@/utils/common';
+import { randomNum } from '@/utils/common';
 import { isAccountLoggedIn } from '@/utils/auth';
 import { uploadSong } from '@/api/user';
 import { getLyric } from '@/api/track';
@@ -310,7 +310,6 @@ export default {
   activated() {
     this.$parent.$refs.scrollbar.restorePosition();
     this.loadData();
-    dailyTask();
   },
   methods: {
     ...mapActions(['showToast']),

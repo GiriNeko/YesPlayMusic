@@ -90,14 +90,14 @@
         </button>
       </div>
       <div class="other-login">
-        <a v-show="mode !== 'email'" @click="changeMode('email')">{{
+        <!-- <a v-show="mode !== 'email'" @click="changeMode('email')">{{
           $t('login.loginWithEmail')
         }}</a>
         <span v-show="mode === 'qrCode'">|</span>
         <a v-show="mode !== 'phone'" @click="changeMode('phone')">{{
           $t('login.loginWithPhone')
         }}</a>
-        <span v-show="mode !== 'qrCode'">|</span>
+        <span v-show="mode !== 'qrCode'">|</span> -->
         <a v-show="mode !== 'qrCode'" @click="changeMode('qrCode')">
           二维码登录
         </a>

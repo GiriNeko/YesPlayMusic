@@ -7,7 +7,6 @@ import i18n from '@/locale';
 import '@/assets/icons';
 import '@/utils/filters';
 import './registerServiceWorker';
-import { dailyTask } from '@/utils/common';
 import '@/assets/css/global.scss';
 import NProgress from 'nprogress';
 import '@/assets/css/nprogress.css';
@@ -38,7 +37,6 @@ Vue.use(
 Vue.config.productionTip = false;
 
 NProgress.configure({ showSpinner: false, trickleSpeed: 100 });
-dailyTask();
 
 new Vue({
   i18n,
